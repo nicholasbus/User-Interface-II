@@ -98,6 +98,17 @@ nav a {
     text-decoration: none;
     padding: 10px;
     border: 1px solid #0A0908;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #EAE0D5;
+    background: #0A0908;
+}
+
+.active {
+    background-color: #0A0908;
+    color: #EAE0D5;
 }
 
 main {
@@ -141,6 +152,12 @@ h3 {
     padding: 5px 20px;
     border: 1px solid #0A0908;
     font-size: 1.2rem;
+    transition: .3s;
+}
+
+.description a:hover {
+    color: #EAE0D5;
+    background: #0A0908;
 }
 
 .description {
@@ -187,6 +204,12 @@ footer a {
     border: 1px solid #0A0908;
     font-size: 1.2rem;
     background: #EAE0D5;
+    transition: .3s;
+}
+
+footer a:hover {
+    color: #EAE0D5;
+    background: #0A0908;
 }
 
 .socials {
