@@ -65,6 +65,7 @@ table {
 
 body {
     font-family: 'Mukta', sans-serif;
+    background: #EAE0D5;
 }
 
 header {
@@ -186,4 +187,17 @@ footer a {
     border: 1px solid #0A0908;
     font-size: 1.2rem;
     background: #EAE0D5;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.socialLink {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
 }
