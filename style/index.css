@@ -1,1 +1,189 @@
 /* Add CSS styling here */
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+/* MEYER RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* BEGIN MAIN STYLING*/
+
+/*
+    Color Palette (darkest to lightest):
+    0A0908
+    22333B
+    EAE0D5
+    C6AC8F
+    5E503F
+*/
+
+body {
+    font-family: 'Mukta', sans-serif;
+}
+
+header {
+    height: 10vh;
+    background: #C6AC8F;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    margin-bottom: 1%;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+header nav {
+    display: flex;
+}
+
+nav {
+    margin-left: 3%;
+}
+
+nav a {
+    color: #0A0908;
+    background: #EAE0D5;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #0A0908;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#imageDescription {
+    display: flex;
+    justify-content: space-between;
+    width: 55vw;
+}
+
+.largeImage {
+    width: 960px;
+    height: 360px;
+    background-image: url('https://picsum.photos/960/360');
+}
+
+.description {
+    display: flex;
+    flex-flow: column wrap;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.description p {
+    font-size: 1.3rem;
+}
+
+.description a {
+    text-decoration: none;
+    color: #0A0908;
+    padding: 5px 20px;
+    border: 1px solid #0A0908;
+    font-size: 1.2rem;
+}
+
+.description {
+    width: 480px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content:baseline;
+}
+
+#gallery {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.image {
+    height: 400px;
+    width: 400px;
+    background: url('https://picsum.photos/400/400');
+    margin: 50px 0;
+}
+
+footer {
+    height: 10vh;
+    background: #C6AC8F;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #0A0908;
+    margin-top: 10px;
+    padding: 20px 40px;
+    border: 1px solid #0A0908;
+    font-size: 1.2rem;
+    background: #EAE0D5;
+}
