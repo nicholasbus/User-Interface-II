@@ -54,34 +54,29 @@ table {
 
 /* BEGIN MAIN STYLING*/
 
-/*
-    Color Palette (darkest to lightest):
-    0A0908
-    22333B
-    EAE0D5
-    C6AC8F
-    5E503F
-*/
+
 
 body {
     font-family: 'Mukta', sans-serif;
-    background: #EAE0D5;
+    background: #40916C;
 }
 
 header {
     height: 10vh;
-    background: #C6AC8F;
+    background: #081C15;
     padding-top: 30px;
     padding-left: 20px;
     padding-bottom: 20px;
     overflow: hidden;
     margin-bottom: 1%;
+    box-shadow: 0 1px 6px 1px black;
 }
 
 header h1 {
     display: inline-block;
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #D8F3DC;
 }
 
 header nav {
@@ -93,22 +88,22 @@ nav {
 }
 
 nav a {
-    color: #0A0908;
-    background: #EAE0D5;
+    color: #D8F3DC;
+    background: #40916C;
     text-decoration: none;
     padding: 10px;
-    border: 1px solid #0A0908;
+    border: 1px solid #081C15;
     transition: .3s;
 }
 
 nav a:hover {
-    color: #EAE0D5;
-    background: #0A0908;
+    color: #40916C;
+    background: #D8F3DC;
 }
 
 .active {
-    background-color: #0A0908;
-    color: #EAE0D5;
+    background-color: #D8F3DC;
+    color: #40916C;
 }
 
 main {
@@ -138,26 +133,30 @@ main {
     align-items: center;
 }
 
+
 h3 {
     font-size: 2rem;
+    color: #D8F3DC;
 }
 
 .description p {
     font-size: 1.3rem;
+    color: #D8F3DC;
 }
 
 .description a {
     text-decoration: none;
-    color: #0A0908;
+    color: #D8F3DC;
     padding: 5px 20px;
-    border: 1px solid #0A0908;
+    margin: 5px 0;
+    box-shadow: 0 1px 6px 1px black;
     font-size: 1.2rem;
     transition: .3s;
 }
 
 .description a:hover {
-    color: #EAE0D5;
-    background: #0A0908;
+    color: #40916C;
+    background: #D8F3DC;
 }
 
 .description {
@@ -166,6 +165,7 @@ h3 {
     flex-flow: column;
     align-items: flex-start;
     justify-content:baseline;
+    
 }
 
 #gallery {
@@ -182,11 +182,13 @@ h3 {
     width: 400px;
     background: url('https://picsum.photos/400/400');
     margin: 50px 0;
+    border-radius: 50px;
+    box-shadow: 0 1px 6px 1px black;
 }
 
 footer {
     height: 10vh;
-    background: #C6AC8F;
+    background: #081C15;
     padding-top: 30px;
     padding-left: 20px;
     padding-bottom: 50px;
@@ -194,22 +196,23 @@ footer {
     display: flex;
     flex-flow: column;
     align-items: center;
+    box-shadow: 0 -1px 6px 1px black;
 }
 
 footer a {
     text-decoration: none;
-    color: #0A0908;
+    color: #D8F3DC;
     margin-top: 10px;
     padding: 20px 40px;
     border: 1px solid #0A0908;
     font-size: 1.2rem;
-    background: #EAE0D5;
+    background: #40916C;
     transition: .3s;
 }
 
-footer a:hover {
-    color: #EAE0D5;
-    background: #0A0908;
+footer a.contactButton:hover {
+    color: #40916C;
+    background: #D8F3DC;
 }
 
 .socials {
@@ -222,5 +225,8 @@ footer a:hover {
     padding: 0;
     border: none;
     background-color: transparent;
+}
 
+.socialLink:hover {
+    text-decoration: underline;
 }
