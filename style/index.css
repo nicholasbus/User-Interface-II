@@ -54,7 +54,9 @@ table {
 
 /* BEGIN MAIN STYLING*/
 
-
+html {
+    font-size: 62.5%; /* 10px */
+}
 
 body {
     font-family: 'Mukta', sans-serif;
@@ -65,18 +67,18 @@ body {
 header {
     height: 10vh;
     background: #081C15;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
     overflow: hidden;
     margin-bottom: 1%;
-    box-shadow: 0 1px 6px 1px black;
+    box-shadow: 0 0.1rem 0.6rem 0.1rem black;
 }
 
 header h1 {
     display: inline-block;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
     color: #D8F3DC;
 }
 
@@ -93,9 +95,10 @@ nav a {
     color: #D8F3DC;
     background: #40916C;
     text-decoration: none;
-    padding: 10px;
-    border: 1px solid #081C15;
+    padding: 1rem;
+    border: 0.1rem solid #081C15;
     transition: .3s;
+    font-size: 1.6rem;
 }
 
 nav a:hover {
@@ -123,34 +126,34 @@ main {
 }
 
 .largeImage {
-    width: 960px;
-    height: 360px;
+    width: 96rem;
+    height: 36rem;
     background-image: url('https://picsum.photos/960/360');
     
-    border-radius: 50px;
-    box-shadow: 0 1px 6px 1px black;
+    border-radius: 5rem;
+    box-shadow: 0 0.1rem 0.6rem 0.1rem black;
     
     margin: 5rem 2rem 5rem 0;
 }
 
 
 h3 {
-    font-size: 2rem;
+    font-size: 3.2rem;
     color: #D8F3DC;
 }
 
 .description p {
-    font-size: 1.3rem;
+    font-size: 2.08rem;
     color: #D8F3DC;
 }
 
 .description a {
     text-decoration: none;
     color: #D8F3DC;
-    padding: 5px 20px;
-    margin: 5px 0;
-    box-shadow: 0 1px 6px 1px black;
-    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    margin: 0.5rem 0;
+    box-shadow: 0 0.1rem 0.6rem 0.1rem black;
+    font-size: 1.92rem;
     transition: .3s;
 }
 
@@ -160,12 +163,11 @@ h3 {
 }
 
 .description {
-    width: 480px;
+    width: 48rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
-
+    align-items: baseline;
 }
 
 /* IMAGE GALLERY */
@@ -175,39 +177,39 @@ h3 {
     width: 100%;
     justify-content: space-around;
     align-items: flex-start;
-    margin-top: 50px;
+    margin-top: 5rem;
 }
 
 .image {
-    height: 400px;
-    width: 400px;
+    height: 40rem;
+    width: 40rem;
     background: url('https://picsum.photos/400/400');
-    margin: 50px 0;
-    border-radius: 50px;
-    box-shadow: 0 1px 6px 1px black;
+    margin: 5rem 0;
+    border-radius: 5rem;
+    box-shadow: 0 0.1rem 0.6rem 0.1rem black;
 }
 
 /* FOOTER */
 footer {
     height: 10vh;
     background: #081C15;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-bottom: 50px;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-bottom: 5rem;
     overflow: hidden;
     display: flex;
     flex-flow: column;
     align-items: center;
-    box-shadow: 0 -1px 6px 1px black;
+    box-shadow: 0 -0.1rem 0.6rem 0.1rem black;
 }
 
 footer a {
     text-decoration: none;
     color: #D8F3DC;
-    margin-top: 10px;
-    padding: 20px 40px;
-    border: 1px solid #0A0908;
-    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 2rem 4rem;
+    border: 0.1rem solid #0A0908;
+    font-size: 1.92rem;
     background: #40916C;
     transition: .3s;
 }
@@ -243,10 +245,15 @@ footer a.contactButton:hover {
 
     /* HEADER AND NAV */
     header {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+
+        padding: 3rem 0;
         text-align: center;
         background: #40916C;
         box-shadow: none;
-        height: max-content
+        height: max-content;
     }
 
     header h1 {
@@ -258,7 +265,7 @@ footer a.contactButton:hover {
         display: flex;
         flex-flow: column nowrap;
         width: 10rem;
-        margin: 0 auto;
+        margin: 0;
         font-size: 1.5rem;
     }
     
@@ -274,15 +281,15 @@ footer a.contactButton:hover {
     }
     
     .largeImage {
-        width: 32rem;
-        height: 24rem;
+        width: 36rem;
+        height: 28rem;
         background-image: url('https://picsum.photos/960/360');
+        margin: 1rem 0;
     }
     
     .description {
         width: 100%;
-        justify-content: center;
-        align-content: center;
+        align-items: center;
         text-align: center;
     }
 
@@ -308,8 +315,8 @@ footer a.contactButton:hover {
     }
     
     .image {
-        height: 20rem;
-        width: 20rem;
+        height: 30rem;
+        width: 30rem;
         margin: 5rem 0;
         border-radius: 5rem;
         box-shadow: 0 0.1rem 0.6rem 0.1rem black;
@@ -332,20 +339,21 @@ footer a.contactButton:hover {
     /* LARGE IMAGE AND DESCRIPTION */
     
     .largeImage {
-        width: 18rem;
-        height: 14rem;
+        width: 26rem;
+        height: 22rem;
+        border-radius: 2.5rem;
     }
     
     /* IMAGE GALLERY */
 
     #gallery {
         width: 75%;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
     .image {
-        height: 10rem;
-        width: 10rem;
+        height: 25rem;
+        width: 25rem;
         border-radius: 2.5rem;
     }
     
