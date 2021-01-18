@@ -61,6 +61,7 @@ body {
     background: #40916C;
 }
 
+/* HEADER */
 header {
     height: 10vh;
     background: #081C15;
@@ -83,6 +84,7 @@ header nav {
     display: flex;
 }
 
+/* NAV WITHIN HEADER */
 nav {
     margin-left: 3%;
 }
@@ -101,7 +103,7 @@ nav a:hover {
     background: #D8F3DC;
 }
 
-.active {
+.active { /* active state for the nav */
     background-color: #D8F3DC;
     color: #40916C;
 }
@@ -113,6 +115,7 @@ main {
     justify-content: center;
 }
 
+/* MAIN SECTION OF THE PAGE - LARGE IMAGE WITH DESCRIPTION */
 #imageDescription {
     display: flex;
     justify-content: space-between;
@@ -127,7 +130,7 @@ main {
     border-radius: 50px;
     box-shadow: 0 1px 6px 1px black;
     
-    margin: 50px 0;
+    margin: 5rem 2rem 5rem 0;
 }
 
 
@@ -165,6 +168,7 @@ h3 {
 
 }
 
+/* IMAGE GALLERY */
 #gallery {
     display: flex;
     flex-flow: row wrap;
@@ -183,6 +187,7 @@ h3 {
     box-shadow: 0 1px 6px 1px black;
 }
 
+/* FOOTER */
 footer {
     height: 10vh;
     background: #081C15;
@@ -212,6 +217,7 @@ footer a.contactButton:hover {
     background: #D8F3DC;
 }
 
+/* SOCIAL BUTTONS ON THE FOOTER */
 .socials {
     display: flex;
     justify-content: space-between;
